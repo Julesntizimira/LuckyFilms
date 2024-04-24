@@ -335,7 +335,7 @@ nav{
     left: 0;
     right: 0;
     bottom: 0; */
-    background-color: rgba(0, 0, 0, 0.502);
+    background-color: rgba(0, 0, 0, 0);
     height: 100vh;
 
 }
@@ -373,7 +373,8 @@ nav{
 }
 .btn-one:hover{
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.545);
+    background-color: rgba(0, 0, 0, 0.457);
+    cursor: pointer;
     border: none;
 }
 
