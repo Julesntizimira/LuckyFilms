@@ -10,25 +10,25 @@ export default function Welcome() {
                     </a>
                 </div>
                 <div className="social-medias">
-                    <a href="">
+                    <a href="https://www.instagram.com/">
                         <p> 
                             <i className="fa-brands fa-facebook"></i>
                             <span>Facebook</span>
                         </p>
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/">
                         <p>
                             <i className="fa-brands fa-instagram"></i>
                             <span>Instagram</span>
                         </p>
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/">
                         <p>
                             <i className="fa-brands fa-youtube"></i>
                         <span>Youtube</span>
                         </p>
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/">
                         <p>
                             <i className="fa-brands fa-x-twitter"></i>
                         <span>Twitter</span>

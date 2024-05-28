@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 export default function Services() {
     return (
         <section id="services" className="services">
@@ -9,9 +10,9 @@ export default function Services() {
                 <p className="para"> From creative development to drone visuals, 
                     we offer diverse services to bring your story to life
                 </p>
-                <a href="">
+                <Link to="/">
                     <span>Learn more <i className="fa-solid fa-arrow-right"></i></span>
-                </a>
+                </Link>
             </div>
             <div className="right">
                 <div className="row-one">

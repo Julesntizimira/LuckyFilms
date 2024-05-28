@@ -12,16 +12,16 @@ export default function Contact () {
                     <p className="para"><i className="fa-solid fa-envelope"></i>luckyfilmz27@gmail.com</p>
                 </div>
                 <div className="follow-us">
-                    <a href="" className="fcbk">
+                    <a href="https://www.instagram.com/" className="fcbk">
                         <i className="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="" className="ig">
+                    <a href="https://www.instagram.com/" className="ig">
                         <i className="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="" className="youtube">
+                    <a href="https://www.instagram.com/" className="youtube">
                         <i className="fa-brands fa-youtube"></i>
                     </a>
-                    <a href="" className="x">
+                    <a href="https://www.instagram.com/" className="x">
                         <i className="fa-brands fa-x-twitter"></i>
                     </a>
                 </div>

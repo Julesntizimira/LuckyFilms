@@ -9,7 +9,7 @@ export default function Work() {
                     lens of  dedicated filmmakers and drone specialist.
                 </p>
                 <div className="work-bottom-container">
-                    <a href="">
+                    <a href="https://www.instagram.com/">
                         <span>VIEW ALL<i className="fa-solid fa-arrow-right"></i></span>
                     </a>
                 </div>
