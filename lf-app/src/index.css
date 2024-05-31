@@ -163,12 +163,12 @@ nav{
   height: 50vh;
   transition: height 0.5s ease, pointer-events 0.5s ease;
 }
-.logo-cont {
+a .logo-cont {
   height: 3rem;
   width: 3rem;
  
 }
-.logo-cont img{
+a .logo-cont img{
   height: 3rem;
   object-fit: cover;
   border-radius: 50%;
@@ -681,7 +681,6 @@ nav{
 .work-piece i {
   color: var(--major-color);
   font-size: 3rem;
-  opacity: 0;
   transition: 0.3s ease-in-out;
 }
 
@@ -940,6 +939,12 @@ strong {
   bottom: 0;
   left: 0;
   z-index: -1;
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+}
+.sunset h3 {
+  color: white;
 }
 .sunset.hide {
   display: none;
@@ -1152,7 +1157,7 @@ strong {
   .map svg {
       width: 100vw;
   }
-  .work-piece i, .work-piece .para  {
+ .work-piece p.para {
       opacity: 1;
   }
   .services, .about, .contact, .team, .work-section, .partner, .drone-pilot, .partners  {

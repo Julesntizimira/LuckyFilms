@@ -1,43 +1,20 @@
 import { useState } from "react"
+import {Link} from "react-router-dom"
 
-export default function NavigationBar () {
+export default function NavigationBar (props) {
     const [visibleMenu , setVisibleMenu] = useState(null);
-    const navItems = [
-        {
-            name: "HOME",
-            link: "#none"
-        },
-        {
-            name: "ABOUT US",
-            link: "#about"
-        },
-        {
-            name: "SERVICES",
-            link: "#services"
-        },
-        {
-            name: "ABOUT US",
-            link: "#about"
-        },
-        {
-            name: "TEAM",
-            link: "#team"
-        },
-        {
-            name: "CLIENTS",
-            link: "#partners"
-        }
-
-    ]
-
+    const {navItems} = props;
+ 
     function handleMenuClick () {
         setVisibleMenu(prev => prev ? null : "visible")
     }
     return (
         <nav>
-            <div className="logo-cont">
-                <img src="./static/images/101318049_3374174919312111_7881680195533406208_n.jpg" alt="" />
-            </div>
+            <Link to="/">
+                <div className="logo-cont">
+                    <img src="./static/images/101318049_3374174919312111_7881680195533406208_n.jpg" alt="" />
+                </div>
+            </Link>
             <div className="slogan">
                 <h3>LUCKY_FILMZ</h3>
                 <i>The Sky Diver</i>
@@ -45,11 +22,10 @@ export default function NavigationBar () {
             <ul className="nav-ul">
                 {
                     navItems.map((item) => {
-                        return(
-                            <a href={item.link}>
-                                <li>{item.name}</li>
-                            </a>
-                        )
+                        const element =  item.link ? 
+                            (<Link to={item.link}><li>{item.name}</li></Link>) : 
+                            (<a href={item.id}><li>{item.name}</li></a>)
+                        return element;
                     })
                 }
                 <a href="#contact">
@@ -62,13 +38,14 @@ export default function NavigationBar () {
             <ul className={`nav-ul-hidden ${visibleMenu}`}>
                 {
                     navItems.map((item) => {
-                        return(
-                            <a href={item.link}>
-                                <li onClick={() => {
-                                    setVisibleMenu(null)
-                                }}>{item.name}</li>
-                            </a>
-                        )
+                        const element =  item.link ? 
+                            (<Link to={item.link}><li onClick={() => {
+                                setVisibleMenu(null)
+                            }} >{item.name}</li></Link>) : 
+                            (<a href={item.id}><li onClick={() => {
+                                setVisibleMenu(null)
+                            }}>{item.name}</li></a>)
+                        return element;
                     })
                 }
                 <a href="#contact">

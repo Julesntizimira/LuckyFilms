@@ -14,12 +14,38 @@ import Accordion from './accordion';
 import { Outlet } from 'react-router-dom';
 
 export default function Layout() {
+  const navItems = [
+    {
+        name: "HOME",
+        id: "#none"
+    },
+    {
+        name: "ABOUT US",
+        id: "#about"
+    },
+    {
+        name: "SERVICES",
+        id: "#services"
+    },
+    {
+        name: "ABOUT US",
+        id: "#about"
+    },
+    {
+        name: "TEAM",
+        id: "#team"
+    },
+    {
+        name: "CLIENTS",
+        id: "#partners"
+    }
+
+  ]
   useEffect(() => {
     const aboutContainer = document.querySelector('.about-container');
     const workTopContainer = document.querySelector('.work-top-container');
     const pilotContent = document.querySelector('.pilot-content');
     const teamContent = document.querySelector('.team-content');
-
     const options = {
       root: null,
       threshold: 1,
@@ -69,7 +95,7 @@ export default function Layout() {
     <Video />
     <main>
         <Welcome />
-        <NavigationBar />
+        <NavigationBar  navItems={navItems}/>
         <DronePilot />
         <Services />
         <About />

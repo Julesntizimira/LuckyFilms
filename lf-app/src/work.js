@@ -9,14 +9,14 @@ export default function Work() {
                     lens of  dedicated filmmakers and drone specialist.
                 </p>
                 <div className="work-bottom-container">
-                    <a href="https://www.instagram.com/">
+                    <Link to="/works">
                         <span>VIEW ALL<i className="fa-solid fa-arrow-right"></i></span>
-                    </a>
+                    </Link>
                 </div>
             </div>
 
             <div className="work-container">
-                <Link to="/drone_visual">
+                <Link to="watch/drone_visual">
                  
                         <div className="work-piece one"> 
                             <p className="para">
@@ -26,7 +26,7 @@ export default function Work() {
                         </div>
              
                 </Link>
-                <Link to="documentary">
+                <Link to="watch/documentary">
                     <div className="work-piece two">
 
                            
@@ -36,7 +36,7 @@ export default function Work() {
                             </p>
                     </div>
                 </Link>
-                <Link to="time_lapse">
+                <Link to="watch/time_lapse">
                     <div className="work-piece three">
                         <p className="para">
                             <i className="fa-solid fa-circle-play"></i>
@@ -44,7 +44,7 @@ export default function Work() {
                         </p>
                     </div>
                 </Link>
-                <Link to="cinematography">
+                <Link to="watch/cinematography">
                     <div className="work-piece four">
                         <p className="para">
                             <i className="fa-solid fa-circle-play"></i>
@@ -52,7 +52,7 @@ export default function Work() {
                         </p>
                     </div>
                 </Link>
-                <Link to="project_documentation">
+                <Link to="watch/project_documentation">
                     <div className="work-piece five">
                         <p className="para">
                             <i className="fa-solid fa-circle-play"></i>
